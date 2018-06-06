@@ -1,0 +1,46 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #dddede;
+    counter-reset: section;
+}
+
+.add {
+    background-color: #138d90;
+}
+
+.add:hover {
+    background-color: #1bd0d3;
+}
+
+.remove {
+    background-color: #fc9b0a;
+}
+
+.remove:hover {
+    background-color: #ffc97a;
+}
+
+
+.clear {
+    background-color: #fd3c3c;
+}
+
+.clear:hover {
+    background-color: #fc8383;
+}
+
+.options {
+    color: #30415d;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    outline: none;
+}
+
+
+p::after {
+    counter-increment: section;
+    content: " " counter(section);
+}
